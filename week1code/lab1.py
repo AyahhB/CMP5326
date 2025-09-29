@@ -5,7 +5,8 @@ with open('lab1example.txt', 'r',encoding="utf8") as file:
     text = file.read()
 
 # Define a regex pattern to match email addresses
-email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'john.doe@example.com
+
 
 # Find all email addresses in the text
 emails = re.findall(email_pattern, text)
